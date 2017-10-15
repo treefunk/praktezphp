@@ -23,14 +23,13 @@ echo "</tr>";
 for($i = 1 ; $i <= 12 ; $i++)
 {
     echo "<tr>";
-    $z = 0;
-    while($z < 12){
-        $y = ($z+1)*$i;
-        if($z == 0){
-            echo "<th>".$y."</th>";
+    $y = 0;
+    while($y < 12){
+        if($y == 0){
+            echo "<th>".($y+1)*$i."</th>";
         }
-        echo "<td>".$y."</td>";
-        $z++;
+        echo "<td>".($y+1)*$i."</td>";
+        $y++;
     }
     echo "</tr>";
 }
